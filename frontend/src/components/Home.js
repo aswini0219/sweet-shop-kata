@@ -53,7 +53,7 @@ export default function Home() {
             <AddSweetForm onSuccess={triggerRefresh} />
           </div>
         )}
-        {/* SweetList (includes SearchBar) will now be centered because of maxWidth above */}
+        {/* SweetList (includes SearchBar)*/}
         <SweetList refreshTrigger={refresh} />
       </div>
     </div>

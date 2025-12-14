@@ -9,7 +9,7 @@ export default function AdminPanel() {
 
   useEffect(() => {
     const isAdmin = localStorage.getItem("is_admin") === "true";
-    console.log("ADMIN CHECK:", isAdmin); // 🔍 ADD THIS TEMP
+    console.log("ADMIN CHECK:", isAdmin); 
     if (!isAdmin) {
       alert("Access denied. Admin only.");
       navigate("/");
@@ -24,10 +24,10 @@ export default function AdminPanel() {
     <div>
       <h2>Admin Panel</h2>
 
-      {/* ✅ Admin-only */}
+      {/* Admin-only */}
       <AddSweetForm onSweetAdded={handleSweetAdded} />
 
-      {/* ✅ Force refresh on add/delete/restock */}
+      {/* Force refresh on add/delete/restock */}
       <SweetList refresh={refresh} />
     </div>
   );

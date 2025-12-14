@@ -7,7 +7,7 @@ export default function SweetCard({
   onPurchase,
   onRestock,
   onDelete,
-  onUpdateSuccess, // Pass fetchSweets from SweetList
+  onUpdateSuccess, 
 }) {
   const handleEdit = async () => {
     const newName = prompt("Edit name:", sweet.name);

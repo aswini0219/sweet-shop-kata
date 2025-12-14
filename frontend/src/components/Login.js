@@ -17,7 +17,6 @@ export default function Login() {
       localStorage.setItem("is_admin", res.data.is_admin ? "true" : "false");
       localStorage.setItem("username", username);
 
-      // Direct redirect — no need for useNavigate
       window.location.href = "/";
     } catch (err) {
       alert("Invalid credentials");
